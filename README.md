@@ -9,18 +9,7 @@
 
 ## 2. Структура проекта
 
-Проект имеет следующую структуру:
-MyAdService/
-  Controllers/
-    AdvertisingController.cs  // Контроллер с методами загрузки и поиска
-  Models/
-    AdvertisingPlatform.cs      // Модель рекламной площадки
-  Pages/
-    Upload.cshtml               // Razor‑страница для загрузки файла
-    Upload.cshtml.cs            // Код‑behind для страницы Upload
-  Properties/
-    launchSettings.json         // Настройки запуска (порты, URL, launchUrl)
-  Program.cs                    // Точка входа и конфигурация приложения
+MyAdService/ ├── Controllers/ │ └── AdvertisingController.cs // Контроллер с методами загрузки и поиска ├── Models/ │ └── AdvertisingPlatform.cs // Модель рекламной площадки ├── Pages/ │ ├── Upload.cshtml // Razor‑страница для загрузки файла │ └── Upload.cshtml.cs // Код‑behind для страницы Upload ├── Properties/ │ └── launchSettings.json // Настройки запуска (порты, URL, launchUrl) └── Program.cs // Точка входа и конфигурация приложения
 
 
 ## 3. Запуск проекта
