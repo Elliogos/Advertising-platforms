@@ -1,0 +1,27 @@
+﻿@page
+@model Advertising_platforms.Padges.UploadModel
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Загрузка рекламных площадок</title>
+</head>
+<body>
+    <h2>Загрузить файл с рекламными площадками</h2>
+    <form method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div>
+            <label for="fileInput">Выберите файл:</label>
+            <input type="file" id="fileInput" name="File" accept=".txt" />
+        </div>
+        <div>
+            <button type="submit">Загрузить</button>
+        </div>
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.ResultMessage))
+    {
+        <p>@Model.ResultMessage</p>
+    }
+</body>
+</html>
